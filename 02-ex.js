@@ -27,4 +27,10 @@ let products = [
     }
     printProductName();
 
+    //3
+    function printProduct3() {
+        products.find(product => product.id === 3 && console.log(product));
+    }
+    printProduct3();
+
     
