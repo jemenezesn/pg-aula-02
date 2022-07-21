@@ -81,3 +81,13 @@ let products = [
     }
     sumAllProducts();
 
+        //04
+        function compareSomeProducts(examplePrice) {
+            for (let product of products) {
+                product.price > examplePrice && console.log(product);
+            }
+        }
+        compareSomeProducts(100);
+
+
+
