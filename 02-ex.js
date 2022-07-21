@@ -58,7 +58,7 @@ let products = [
         products.push({ name: 'Charger', price: 10, quantity: 7, colors: ['blakc', 'white'] });
         console.log(products);
     }
-    // addNewProduct();
+    addNewProduct();
 
     //02
     function removeProductsWithoutStock() {
@@ -69,4 +69,15 @@ let products = [
         }
     }
     removeProductsWithoutStock();
+
+    //03
+    function sumAllProducts() {
+        let sumProduct = 0;
+        
+        for(let product of products) {
+            sumProduct += product.quantity;
+        }
+        console.log(sumProduct);
+    }
+    sumAllProducts();
 
