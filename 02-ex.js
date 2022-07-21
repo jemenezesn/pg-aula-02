@@ -33,4 +33,16 @@ let products = [
     }
     printProduct3();
 
+    //4
+    function printProductBlack() {
+        products.filter(product => {
+            for(let color of product.colors) {
+                if(color === 'black') {
+                    console.log(product)
+                }
+            }
+        })
+    }
+    printProductBlack();
+    
     
