@@ -11,12 +11,12 @@ let products = [
     { name: 'Monitor', price: 200, quantity: 3, colors: [] },
     ]
 
-
+    //PRATICA 01
     //1
     function addID() {
         for(let i = 1; i < products.length; i++) {
             products[i].id = i;
-            console.log(products[i])
+            // console.log(products[i]);
         }
     }
     addID();
@@ -51,3 +51,12 @@ let products = [
             
     }
     printNonColorProduct();
+
+    //PRATICA 02
+    //01
+    function addNewProduct() {
+        products.push({ name: 'Charger', price: 10, quantity: 7, colors: ['blakc', 'white'] });
+        console.log(products);
+    }
+    // addNewProduct();
+
