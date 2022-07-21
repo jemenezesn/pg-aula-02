@@ -89,5 +89,12 @@ let products = [
         }
         compareSomeProducts(100);
 
-
-
+        //05
+        function productsWithLetterO() {
+            for (let product of products) {
+                for(let letter of product.name) {
+                    letter === 'o' && console.log(product);
+                }
+            }
+        }
+        productsWithLetterO();
