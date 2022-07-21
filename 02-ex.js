@@ -45,4 +45,9 @@ let products = [
     }
     printProductBlack();
     
-    
+    //5
+    function printNonColorProduct() {
+        products.filter(product => product.colors.length === 0 && console.log(product))
+            
+    }
+    printNonColorProduct();
