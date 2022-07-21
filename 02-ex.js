@@ -60,3 +60,13 @@ let products = [
     }
     // addNewProduct();
 
+    //02
+    function removeProductsWithoutStock() {
+        for(let product of products) {
+            if(product.quantity === 0) {
+                products.splice(product.id - 1, 1);
+            }
+        }
+    }
+    removeProductsWithoutStock();
+
