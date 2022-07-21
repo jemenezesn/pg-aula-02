@@ -21,3 +21,10 @@ let products = [
     }
     addID();
 
+    //2
+    function printProductName() {
+        products.map(productName => console.log(productName.name));
+    }
+    printProductName();
+
+    
